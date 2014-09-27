@@ -36,7 +36,7 @@ angular.module('uhackApp')
         $scope.submit = function sendData() {
         $scope.show = true;
         $scope.test = $scope.item.split(',').join(' ');
-        $scope.url = "http://localhost:4730/q="+ $scope.test;
+        $scope.url = "http://localhost:8080/rpc?q="+ $scope.test;
         console.log($scope.url);
 
         $http({
