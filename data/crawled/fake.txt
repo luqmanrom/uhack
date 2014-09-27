@@ -1,0 +1,38 @@
+milk,horizon;718
+milk,market pantry;708
+milk,nestquick;477
+fruit,orange;595
+fruit,blueberry;753
+fruit,strawberry;797
+fruit,apple;576
+fruit,lemon;994
+soda,coke;721
+soda,pepsi;516
+soda,mello yello;224
+soda,root beer;684
+yogurt,dannon;444
+yogurt,yoplait;703
+yogurt,activia;909
+yogurt,chobani;390
+juice,naked juice;878
+juice,Ocean spray;537
+juice,Minute maid;483
+juice,Welch's;452
+vegetable,Spinach;731
+vegetable,lettuce;725
+vegetable,cabbage;877
+vegetable,tomatoes;333
+vegetable,cucumber;458
+chocolates,cadburry;286
+chocolates,twix;819
+chocolates,sneakers;831
+chocolates,kinder;871
+biscuits,Pillsbury Grands;843
+biscuits,oreo;524
+biscuits,Jacobs;844
+biscuits,Mcvities;617
+chips,Lays;622
+chips,Doritos;804
+coffee,Starbucks;255
+coffee,folgers;937
+coffee,nescafe;248
