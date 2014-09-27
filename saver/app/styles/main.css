@@ -1,0 +1,219 @@
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  padding-bottom: 19px;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+
+/* For the meter */
+
+/*Design from Dribbble shot by Cesar Zeppini*/
+/*http://dribbble.com/shots/1201397-Dashboard-Elements*/
+
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+
+/* entypo */
+[class*="entypo-"]:before {
+    font-family: 'entypo', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #e9f1f4;
+}
+
+/*Thanks @shaw
+http://codepen.io/shshaw/pen/gEiDt*/
+
+.Absolute-Center {
+    margin: auto;
+    position: relative;
+    top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.balanceBox {
+    background-color: #fff;
+    border-radius: 3px;
+    color: #96adbd;
+    font-family: 'Montserrat', Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    height: 192px;
+    overflow: hidden;
+    position: relative;
+    width: 362px;
+}
+
+.headerBox {
+    background-color: #f9fafc;
+    height: 47px;
+    top: 0;
+    width: 100%;
+}
+
+.balanceHeader {
+    font: inherit;
+    left: 40px;
+    line-height: 47px;
+    position: absolute;
+    text-transform: uppercase;
+}
+
+.headerIcon {
+    font-size: 16px;
+    left: -25px;
+    position: absolute;
+    display: inline-block;
+}
+
+.divider {
+    background-color: #ebf0f4;
+    border: none;
+    height: 1px;
+    position: absolute;
+    top: 47px;
+    width: 100%
+}
+
+.meterContainer {
+    overflow: display;
+    height: 78px;
+    width: 300px;
+    position: absolute;
+    top: 79px;
+    left: 31px;
+}
+
+.meterBackground {
+    background-color: #e9f1f4;
+    border-radius: 32px;
+    height: 32px;
+    width: 300px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.meterBar {
+    background-color: #ea5c50;
+    border-radius: 32px;
+    display: block;
+    height: 100%;
+    width: 75%;
+    position: relative;
+}
+
+meter {
+    display: none;
+}
+
+.progressValue {
+    background-color: #38b3b1;
+    border-radius: 2px;
+    color: #fff;
+    font-family: 'Montsserat', sans-serif;
+    height: 31px;
+    right: -25px;
+    line-height: 31px;
+    position: absolute;
+    text-align: center;
+    top: -46px;
+    width: 50px;
+    z-index: 2;
+}
+
+/*Triangluar tip on numerical indicator*/
+.progressValue:before {
+    background-color: #38b3b1;
+    border-radius: 1px;
+    content: "";
+    height: 10px;
+    left: 20px;
+    position: absolute;
+    transform: rotate(45deg);
+    top: 25px;
+    width: 10px;
+    z-index: 3;
+}
+
+

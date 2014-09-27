@@ -1,0 +1,74 @@
+<section id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Find item</h2>
+                <!--<h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>-->
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <form name="sentMessage" id="contactForm">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <!--<input type="text" class="form-control" placeholder="Enter any item you want" >-->
+                                <input type="text" class="form-control" placeholder="Enter any item you want" ng-model="item" />
+
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+
+                        <div class="clearfix"></div>
+                        <div class="col-lg-12 text-center">
+                            <div id="success"></div>
+                            <button ng-click="submit()" class="btn btn-xl">Submit</button>
+                            <h3 class="section-subheading text-muted" ng-show="show">Checking the database for the best result...</h3>
+                            <p style="color: #ffffff"> {{respond}}</p>
+
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Querying Result</h2>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-12" ng-repeat="dummy in dummies ">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                    </span>
+                <h2 class="service-heading">{{dummy.stores | uppercase}}</h2>
+                <h4>Total Price: {{dummy.price | currency }} </h4>
+
+                <div class="balanceBox Absolute-Center is-Fixed">
+                    <div class="meterContainer">
+                        <div aria-hidden="true" class="meterBackground">
+                            <div aria-hidden="true" class="meterBar">
+                                <label class="progressValue">
+                                    <span class="progressNumber"></span>
+                                    <meter max="1000" value="100" class="leaseMeter"></meter>
+                                </label><!--progressValue-->
+                            </div><!--meterBar-->
+                        </div> <!--meterBackground-->
+                    </div><!--meterContainer-->
+
+                </div><!--balanceBox-->
+
+
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
