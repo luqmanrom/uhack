@@ -26,9 +26,6 @@ angular.module('uhackApp')
         ];
 
 
-
-
-
         console.log($scope.dummies[0].stores);
         console.log($scope.dummies[0].price);
 
@@ -45,11 +42,14 @@ angular.module('uhackApp')
 
             })
                 .then(function(response) {
-                  $scope.respond = response;
+                  $scope.respond = angular.fromJson(response).data.totals;
+	         $scope.dummies = angular.fromJson(response).data.totals; 
+	          
                   console.log(response);
                 },
                 function(response) {
                     // failed
+
                 }
             );
 
