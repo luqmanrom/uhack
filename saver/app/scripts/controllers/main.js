@@ -20,14 +20,9 @@ angular.module('uhackApp')
 
 
 
-        $scope.dummies = [ {"stores" : "target","price":200},
-                         {"stores" : "walmart","price":200},
-                         {"stores" : "walgreen","price":200}
-        ];
+        $scope.dummies = [];
 
 
-        console.log($scope.dummies[0].stores);
-        console.log($scope.dummies[0].price);
 
 
         $scope.submit = function sendData() {

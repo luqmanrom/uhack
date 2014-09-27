@@ -24,7 +24,6 @@
                             <div id="success"></div>
                             <button ng-click="submit()" class="btn btn-xl">Submit</button>
                             <h3 class="section-subheading text-muted" ng-show="show">Checking the database for the best result...</h3>
-                            <p style="color: #ffffff"> {{respond}}</p>
 
                         </div>
                     </div>
@@ -48,7 +47,7 @@
                         <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
                     </span>
                 <h2 class="service-heading">{{dummy.store | uppercase}}</h2>
-                <h4>Total Price: {{dummy.totalCost | currency }} </h4>
+                <h4>Total Price: {{dummy.totalCost/100 | currency }} </h4>
 
                 <div class="balanceBox Absolute-Center is-Fixed">
                     <div class="meterContainer">
